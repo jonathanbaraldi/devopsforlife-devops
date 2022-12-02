@@ -20,10 +20,19 @@
 
 </center>
 
-# devops
-Material da comunidade DevOps for Life
+
+
+![DevOps for Life - Docker, Kubernetes e Rancher](doc/docker-kubernetes-rancher.png)
+
+# Arquitetura
+
+![Arquitetura](arquitetura.png)
+
+Este repositório pertence a comunidade DevOps for Life:
 
 https://devopsforlife.io
+
+
 
 DevOps for Life = Docker, Kubernetes e Rancher
 
