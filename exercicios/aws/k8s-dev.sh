@@ -1,0 +1,3 @@
+#!/bin/bash
+curl https://releases.rancher.com/install-docker/19.03.sh | sh
+sudo docker run -d --privileged --restart=unless-stopped --net=host -v /etc/kubernetes:/etc/kubernetes -v /var/run:/var/run  rancher/rancher-agent:v2.6.9 --server https://rancher.devopsforlife.io --token 9h8bmt4gx65qtf5lmzsk6jldfd5rsmnqgpdz9ld28hkxjqh2vvmmc2 --ca-checksum 4953a50ae5c4f514d3e723f7a3c7f7512fd3620f03fcdc4677e840567fe567d9 --etcd --controlplane --worker                
