@@ -22,7 +22,7 @@
 
 
 
-![DevOps for Life - Docker, Kubernetes e Rancher](doc/docker-kubernetes-rancher.png)
+![DevOps for Life - Docker, Kubernetes e Rancher](docs/docker-kubernetes-rancher.png)
 
 # Arquitetura
 
