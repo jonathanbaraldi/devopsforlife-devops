@@ -18,15 +18,20 @@ https://github.com/jonathanbaraldi/devops
 
 # Aula 2 - Containers
 	- Containers Docker
-	- Registro
-	- Kubernetes
+	
+	
+# Aula 3 - Kubernetes
 	- Arquitetura do Rancher e Documentação do kubernetes na documentação oficial do Rancher.
 
-# Aula 3 - DevOps
+# Aula 4 - Rancher
+
+
+# Aula 5 - DevOps
 	- Práticas DevOps
 
 
-# Aula 4 - Ambiente
+
+# Aula 6 - Ambiente
 	
 	Nesta aula, iremos verificar a instalação do Docker, e também iremos revisar a arquitetura do ambiente.
 
@@ -51,7 +56,7 @@ $ usermod -aG docker ubuntu
 
 
 
-# Aula 5 - Construindo sua aplicação
+# Aula 7 - Construindo sua aplicação
 
 ### Fazer build das imagens, rodar docker-compose.
 
@@ -166,7 +171,7 @@ $ docker-compose down
 
 
 
-# Aula 6 - Rancher - Single Node
+# Aula 8 - Rancher - Single Node
 
 ### Instalar Rancher - Single Node
 
@@ -199,7 +204,7 @@ $ rancher.<dominio> = IP do host A
 
 
 
-# Aula 7 - Kubernetes
+# Aula 9 - Kubernetes
 
 ### Criar cluster Kubernetes
 
@@ -228,7 +233,7 @@ Navegar pelo Rancher e ver os painéis e funcionalidades.
 
 
 
-# Aula 8 - Kubectl
+# Aula 10 - Kubectl
 
 ### Instalar kubectl no host A
 
@@ -254,7 +259,7 @@ $ kubectl get nodes
 
 
 
-# Aula 9 - DNS
+# Aula 11 - DNS
 
 ### NGINX - Prometheus
 
@@ -262,7 +267,7 @@ Deployment de aplicação
 
 
 
-# Aula 10 - Volume
+# Aula 12 - Volume
 
 ### Volumes
 
@@ -276,7 +281,7 @@ $ kubectl apply -f mariadb-longhorn-volume.yml
 ```
 
 
-# Aula 11 - Logs
+# Aula 13 - Logs
 
 # Falar sobre o módulo específico sobre Elastic Search
 
@@ -285,7 +290,7 @@ $ kubectl apply -f mariadb-longhorn-volume.yml
 
 
 
-# Aula 12 - Monitoramento
+# Aula 13 - Monitoramento
 
 ### Grafana - MONITORAMENTO
 
@@ -304,7 +309,7 @@ Após o deploymnet, entrar no Grafana e Prometheus e mostrar seu funcionamento.
 
 
 
-# Aula 13 - CronJob
+# Aula 15 - CronJob
 
 ### CronJob
 
@@ -337,7 +342,7 @@ Entrar no Rancher para ver os logs e a sequencia de execucao.
 
 
 
-# Aula 14 - ConfigMap
+# Aula 16 - ConfigMap
 
 ### ConfigMap
 
@@ -361,7 +366,7 @@ Agora iremos entrar dentro do container e verificar as configurações definidas
 
 
 
-# Aula 15 - Secrets
+# Aula 17 - Secrets
 
 ### Secrets
 
@@ -395,7 +400,7 @@ Agora com os secrets aplicados, iremos entrar dentro do container e ver como pod
 
 
 
-# Aula 16 - Liveness
+# Aula 18 - Liveness
 
 ### Liveness
 
@@ -433,7 +438,7 @@ $ kubectl get pod liveness-http
 
 
 
-# Aula 17 - SetImage
+# Aula 19 - SetImage
 
 ### SetImage
 
@@ -468,7 +473,7 @@ $ kubectl get pods -l app=nginx -L deployment
 
 
 
-# Aula 18 - Autoscaling
+# Aula 20 - Autoscaling
 
 ### Autoscaling
 
@@ -524,7 +529,7 @@ $ kubectl get deployment php-apache
 
 
 
-# Aula 19 - Scheduling
+# Aula 21 - Scheduling
 
 ### LABEL E SELETORES
 
@@ -548,7 +553,7 @@ $ kubectl label nodes k8s-1 disktype-
 
 
 
-# Aula 20 - Helm
+# Aula 22 - Helm
 
 
 ### HELM
@@ -585,7 +590,7 @@ As aplicações no catálogo do Rancher são feitas pelo Helm.
 
 
 
-# Aula 21 - Políticas de Rede
+# Aula 23 - Políticas de Rede
 
 ### Declarar políticas de rede
 
@@ -674,7 +679,7 @@ $ exit
 
 
 
-# Aula 22 -  Configuração de CPU por namespace
+# Aula 24 -  Configuração de CPU por namespace
 
 ## Configure Minimum and Maximum CPU Constraints for a Namespace
 

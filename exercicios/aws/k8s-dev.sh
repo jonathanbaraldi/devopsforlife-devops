@@ -1,3 +1,4 @@
 #!/bin/bash
-curl https://releases.rancher.com/install-docker/19.03.sh | sh
-sudo docker run -d --privileged --restart=unless-stopped --net=host -v /etc/kubernetes:/etc/kubernetes -v /var/run:/var/run  rancher/rancher-agent:v2.6.9 --server https://rancher.devopsforlife.io --token 9h8bmt4gx65qtf5lmzsk6jldfd5rsmnqgpdz9ld28hkxjqh2vvmmc2 --ca-checksum 4953a50ae5c4f514d3e723f7a3c7f7512fd3620f03fcdc4677e840567fe567d9 --etcd --controlplane --worker                
+curl https://releases.rancher.com/install-docker/20.10.sh | sh
+net.bridge.bridge-nf-call-iptables=1
+sudo docker run -d --privileged --restart=unless-stopped --net=host -v /etc/kubernetes:/etc/kubernetes -v /var/run:/var/run  rancher/rancher-agent:v2.6.9 --server https://18.222.161.125 --token msf825xncxz2mtwk8qcnssjhb8tk8xnr7w6xqrmmhdwfk8rm8vljjh --ca-checksum 6bd29e8b9863e1a433b2133cc8a5cffaa506329d82f36fee7d9f4ff4bf0d265d --etcd --controlplane --worker

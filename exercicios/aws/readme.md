@@ -38,6 +38,11 @@ Kubernetes 1.24
 ElasticSearch 7.17
 Kibana 8.5.0
 
+
+
+https://docs.ranchermanager.rancher.io/getting-started/installation-and-upgrade/installation-requirements/install-docker
+
+
 ```sh 
 # RANCHER SERVER
 
@@ -49,7 +54,21 @@ Kibana 8.5.0
 
 aws ec2 run-instances --image-id ami-0a59f0e26c55590e9 --count 1 --instance-type t3.medium --key-name elasticsearch --security-group-ids sg-0b0e8363b215900f0 --subnet-id subnet-67c83f0e --user-data file://rancher.sh --tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=rancherserver}]' 'ResourceType=volume,Tags=[{Key=Name,Value=rancherserver}]' 
 
+
+
+
+
+ami-0283a57753b18025b
+aws ec2 run-instances --image-id ami-0283a57753b18025b --count 1 --instance-type t3.medium --key-name elasticsearch --security-group-ids sg-0b0e8363b215900f0 --subnet-id subnet-67c83f0e --user-data file://rancher.sh --tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=rancherserver}]' 'ResourceType=volume,Tags=[{Key=Name,Value=rancherserver}]' 
+
+
+
+
 ```
+
+
+
+
 
 ## 4.3 - Configuração do Rancher
 Acessar o Rancher e configurar
@@ -153,6 +172,12 @@ kubectl apply -f fluentd-infra.yaml
 
 ```sh
 aws ec2 run-instances --image-id ami-0a59f0e26c55590e9 --count 3 --instance-type t3.2xlarge --key-name elasticsearch --security-group-ids sg-0b0e8363b215900f0 --subnet-id subnet-67c83f0e --user-data file://k8s-dev.sh   --block-device-mapping "[ { \"DeviceName\": \"/dev/sda1\", \"Ebs\": { \"VolumeSize\": 100 } } ]" --tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=k8s-dev}]' 'ResourceType=volume,Tags=[{Key=Name,Value=k8s-dev}]'  
+```
+
+ami-0283a57753b18025b
+
+```sh
+aws ec2 run-instances --image-id ami-0283a57753b18025b --count 3 --instance-type t3.2xlarge --key-name elasticsearch --security-group-ids sg-0b0e8363b215900f0 --subnet-id subnet-67c83f0e --user-data file://k8s-dev.sh   --block-device-mapping "[ { \"DeviceName\": \"/dev/sda1\", \"Ebs\": { \"VolumeSize\": 100 } } ]" --tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=k8s-dev}]' 'ResourceType=volume,Tags=[{Key=Name,Value=k8s-dev}]'  
 ```
 
 # Parte 12 - fluentd-dev

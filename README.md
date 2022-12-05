@@ -41,73 +41,75 @@ DevOps for Life = Docker, Kubernetes e Rancher
 	- Agenda
 
 ## Aula 2 -  Containers
-
 	- Containers Docker
-	- Registro
-	- Kubernetes
+
+## Aula 3 - Kubernetes
 	- Arquitetura do Rancher e Documentação do kubernetes na documentação oficial do Rancher.
 
-## Aula 3 - DevOps
+## Aula 4 - Rancher
+
+
+## Aula 5 - DevOps
 	- Falar sobre as práticas DevOps
 
-## Aula 4 - Ambiente 
+## Aula 6 - Ambiente 
 	- Verificar ambiente
 	- Fazer docker login nos host's
 
-## Aula 5 - Construindo sua aplicação 
+## Aula 7 - Construindo sua aplicação 
 	- Fazer build dos containers e rodar aplicação no host
 	- Cada aluno irá construir as imagens para seus projetos
 	- Fazer push para o registro
 
-## Aula 6 - Rancher - Single Node
+## Aula 8 - Rancher - Single Node
 	- Instalar Rancher Single Node
 
-## Aula 7 - Kubernetes
+## Aula 9 - Kubernetes
 	- Criar cluster Kubernetes com 2 nós
 
-## Aula 8 - Kubectl 
+## Aula 10 - Kubectl 
 	- Usar kubectl
 
-## Aula 9 - DNS
+## Aula 11 - DNS
 	- Deployment do Traefik
 
-## Aula 10 - Volume
+## Aula 12 - Volume
 	- Deployment do Longhorn e da aplicação mariadb volume.
 
-## Aula 11 - Log
+## Aula 13 - Log
 	- Deployment do Graylog
 
-## Aula 12 - Monitoramento
+## Aula 14 - Monitoramento
 	- Deployment do Prometheus+Grafana
 
-## Aula 13 - CronJob
+## Aula 15 - CronJob
 	- Deployment de cronjob
 
-## Aula 14 -ConfigMap
+## Aula 16 -ConfigMap
 	- Deployment de configmap
 
-## Aula 15 - Secrets
+## Aula 17 - Secrets
 	- Deployment de secrets
 
-## Aula 16 - Liveness
+## Aula 18 - Liveness
 	- Deployment de aplicação com health-check
 
-## Aula 17 - Rolling-Update
+## Aula 19 - Rolling-Update
 	- Deployment de aplicação com Rolling-Update
 
-## Aula 18 - Autoscaling
+## Aula 20 - Autoscaling
 	- Autoscaling de aplicação
 	
-## Aula 19 - Scheduling
+## Aula 21 - Scheduling
 	- Deployment de aplicação usando agendamento.
 
 
-## Aula 20 - HELM - Gerenciador de pacotes do kubernetes
+## Aula 22 - HELM - Gerenciador de pacotes do kubernetes
 	- Iremos instalar e configurar o Helm, bem como fazer o deployment de uma aplicação através dele.
 
-## Aula 21 - Políticas de Rede
+## Aula 23 - Políticas de Rede
 
-## Aula 22 -  Configuração de CPU por namespace
+## Aula 24 -  Configuração de CPU por namespace
 	
 
 
