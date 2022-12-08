@@ -6,7 +6,7 @@
 - 4 máquinas virtuais com 2/4 processadores e 6/8 gb de memória ram
 - 1 domínio
 - Sistema operacional Ubuntu 18 LTS
-- Domínio usado pelo instrutor do curso é: dev-ops-ninja.com
+- Domínio usado pelo instrutor do curso é: devopsforlife.io
 
 
 
@@ -39,10 +39,10 @@ https://github.com/jonathanbaraldi/devops
 
 ```sh
 
-$ ssh -i devops-ninja.pem ubuntu@<ip>  - RancherSerber - HOST A
-$ ssh -i devops-ninja.pem ubuntu@<ip>  - k8s-1         - HOST B
-$ ssh -i devops-ninja.pem ubuntu@<ip>  - k8s-2         - HOST C
-$ ssh -i devops-ninja.pem ubuntu@<ip>  - k8s-3         - HOST D
+$ ssh -i devops.pem ubuntu@<ip>  - RancherSerber - HOST A
+$ ssh -i devops.pem ubuntu@<ip>  - k8s-1         - HOST B
+$ ssh -i devops.pem ubuntu@<ip>  - k8s-2         - HOST C
+$ ssh -i devops.pem ubuntu@<ip>  - k8s-3         - HOST D
 
 # Entrar das máquinas e instalar o docker. Fazer de acordo conforme iremos usando.
 
