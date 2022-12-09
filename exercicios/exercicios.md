@@ -5,7 +5,7 @@
 
 - 4 máquinas virtuais com 2/4 processadores e 6/8 gb de memória ram
 - 1 domínio
-- Sistema operacional Ubuntu 18 LTS
+- Sistema operacional Ubuntu 22.04 LTS
 - Domínio usado pelo instrutor do curso é: devopsforlife.io
 
 
@@ -48,7 +48,7 @@ $ ssh -i devops.pem ubuntu@<ip>  - k8s-3         - HOST D
 
 sudo su
 curl https://releases.rancher.com/install-docker/20.10.sh | sh
-net.bridge.bridge-nf-call-iptables=1
+# net.bridge.bridge-nf-call-iptables=1 - UBUNZtu 20
 usermod -aG docker ubuntu
 ```
 
@@ -66,6 +66,9 @@ Nesse exercício iremos construir as imagens dos containers que iremos usar, col
 Sempre que aparecer <dockerhub-user>, você precisa substituir pelo seu usuário no DockerHub.
 
 Entrar no host A, e instalar os pacotes abaixo, que incluem Git, Python, Pip e o Docker-compose.
+
+
+
 
 
 
