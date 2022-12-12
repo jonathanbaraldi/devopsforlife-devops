@@ -260,9 +260,14 @@ $ kubectl get nodes
 
 # Aula 11 - DNS
 
-### NGINX - Prometheus
+### NGINX - Aplicação exemplo
 
 Deployment de aplicação
+
+```sh
+kubectl apply -f app.yml
+```
+Vai dar ERRO na parte do ingres, e você precisa seguir como eu mostro no vídeo a criação do ingress. É para você interagir e ver como está criando o elemento.
 
 
 
