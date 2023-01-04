@@ -3,7 +3,7 @@
 
 # Prerequisitos
 
-- 4 máquinas virtuais com 2/4 processadores e 6/8 gb de memória ram
+- 4 máquinas virtuais com 2/4 processadores e 6/8 gb de memória ram - 40-50gb disco
 - 1 domínio
 - Sistema operacional Ubuntu 22.04 LTS
 - Domínio usado pelo instrutor do curso é: devopsforlife.io
@@ -179,7 +179,7 @@ $ docker-compose down
 
 ### Instalar Rancher - Single Node
 
-Nesse exercício iremos instalar o Rancher 2.2.5 versão single node. Isso significa que o Rancher e todos seus componentes estão em um container. 
+Nesse exercício iremos instalar o Rancher 2.6.9 versão single node. Isso significa que o Rancher e todos seus componentes estão em um container. 
 
 Entrar no host A, que será usado para hospedar o Rancher Server. Iremos verficar se não tem nenhum container rodando ou parado, e depois iremos instalar o Rancher.
 ```sh
@@ -266,6 +266,8 @@ Deployment de aplicação
 
 
 
+
+
 # Aula 12 - Volume
 
 ### Volumes
@@ -289,7 +291,7 @@ $ kubectl apply -f mariadb-longhorn-volume.yml
 
 
 
-# Aula 13 - Monitoramento
+# Aula 14 - Monitoramento
 
 ### Grafana - MONITORAMENTO
 
@@ -549,33 +551,35 @@ $ kubectl label nodes k8s-1 disktype-
 
 
 
-
-
-
 # Aula 22 - Helm
 
 
 ### HELM
 
+https://github.com/helm/examples
+
 
 ```sh 
-$ curl -LO https://git.io/get_helm.sh
-$ chmod 700 get_helm.sh
-$ ./get_helm.sh
-$ helm init
-$ helm init --upgrade
+curl -LO https://git.io/get_helm.sh
+chmod 700 get_helm.sh
+./get_helm.sh
+helm init
+helm init --upgrade
 
 
-$ kubectl create serviceaccount --namespace kube-system tiller
-$ kubectl create clusterrolebinding tiller-cluster-rule --clusterrole=cluster-admin --serviceaccount=kube-system:tiller
-$ kubectl patch deploy --namespace kube-system tiller-deploy -p '{"spec":{"template":{"spec":{"serviceAccount":"tiller"}}}}'
+kubectl create serviceaccount --namespace kube-system tiller
+kubectl create clusterrolebinding tiller-cluster-rule --clusterrole=cluster-admin --serviceaccount=kube-system:tiller
+kubectl patch deploy --namespace kube-system tiller-deploy -p '{"spec":{"template":{"spec":{"serviceAccount":"tiller"}}}}'
 
 
-$ helm search
+helm repo add examples https://helm.github.io/examples
 
-$ helm repo update
+helm install ahoy examples/hello-world
 
-$ helm install stable/redis
+helm upgrade ahoy examples/hello-world
+
+helm del ahoy
+
 ```
 
 As aplicações no catálogo do Rancher são feitas pelo Helm.
